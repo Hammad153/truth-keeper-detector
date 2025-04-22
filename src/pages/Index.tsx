@@ -9,14 +9,11 @@ import ImageUploader from "@/components/ImageUploader";
 import AnalysisResult, { AnalysisResultData } from "@/components/AnalysisResult";
 import DeepfakeInfo from "@/components/DeepfakeInfo";
 
-// Mock deepfake detection analysis function
-// In a real implementation, this would use actual ML models
 const analyzeImage = async (image: File): Promise<AnalysisResultData> => {
   // Simulate API call delay
   await new Promise(resolve => setTimeout(resolve, 2500));
   
   // For demo purposes, generate a random score
-  // In a real implementation, this would be the actual deepfake detection score
   const isDeepfake = Math.random() > 0.5;
   
   // Generate a score leaning toward the chosen result
@@ -106,7 +103,7 @@ const Index = () => {
           </div>
           <div className="flex items-center space-x-4">
             <a 
-              href="https://github.com/your-username/deepfake-detector" 
+              href="https://github.com/Hammad153/truth-keeper-detector/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
